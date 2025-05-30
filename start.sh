@@ -13,7 +13,8 @@ chmod +x /tmp/chrome/chrome
 mkdir -p /tmp/chromedriver
 curl -sSL https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.111/linux64/chromedriver-linux64.zip -o chromedriver.zip
 unzip -q chromedriver.zip -d /tmp/chromedriver
-chmod +x /tmp/chromedriver/chromedriver-linux64/chromedriver
+mv /tmp/chromedriver/chromedriver-linux64/chromedriver /tmp/chromedriver/chromedriver
+chmod +x /tmp/chromedriver/chromedriver
 
 # Avvia il server
 gunicorn main:app --bind 0.0.0.0:$PORT
