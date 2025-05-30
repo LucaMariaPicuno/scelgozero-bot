@@ -27,7 +27,7 @@ def automatizza_login(username, password):
     print(f"🟢 Avvio per: {username}")
     try:
         options = uc.ChromeOptions()
-        options.binary_location = "/app/chrome"
+        options.binary_location = CHROME_PATH
         options.add_argument("--headless=new")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
