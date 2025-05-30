@@ -5,7 +5,8 @@ echo "⬇️ Scarico Chrome e Chromedriver..."
 # Scarica Chrome
 curl -sSL https://github.com/puppeteer/puppeteer/releases/latest/download/chrome-linux.zip -o chrome-linux.zip
 unzip -q chrome-linux.zip
-mv chrome-linux/* ./
+cp chrome-linux/chrome ./chrome
+chmod +x ./chrome
 
 # Rendi Chrome eseguibile
 chmod +x /app/chrome
