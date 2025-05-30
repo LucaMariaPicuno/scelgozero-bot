@@ -11,7 +11,7 @@ curl -sSL https://storage.googleapis.com/chrome-for-testing-public/120.0.6099.10
 unzip -o chromedriver.zip
 
 mv -f chromedriver-linux64/chromedriver ./chromedriver
-chmod +x ./chromedriver
+chmod +x /app/chrome
 
 # Avvia il server Flask
 exec gunicorn -b 0.0.0.0:8080 main:app
