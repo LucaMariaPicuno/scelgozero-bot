@@ -9,8 +9,8 @@ from selenium.webdriver.common.by import By
 app = Flask(__name__)
 
 CREDENTIALS_URL = "https://drive.google.com/uc?export=download&id=1vEr4c464GRxN_hSvXXW6hP-so5l7KMrG"
-CHROME_PATH = "/app/chrome"
-CHROMEDRIVER_PATH = "/app/chromedriver"
+CHROME_PATH = "/tmp/chrome/chrome"
+CHROMEDRIVER_PATH = "/tmp/chromedriver/chromedriver-linux64/chromedriver"
 BINARY_LOCATION = "/app/chrome"
 
 def scarica_credentials():
