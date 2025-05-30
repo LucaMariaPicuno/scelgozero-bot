@@ -1,0 +1,4 @@
+flask
+requests
+undetected-chromedriver==3.5.5
+selenium
